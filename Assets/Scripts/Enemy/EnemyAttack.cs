@@ -137,7 +137,7 @@ public class EnemyAttack : MonoBehaviour
         attackMode = true;//To check if enemy can still attack or not
         //log attack
         Debug.Log("AttackPlayer");
-        animator.SetBool("Attacking",true);
+        animator.SetTrigger("Attack");
         TriggerCooling();
         //deal damage
         target.GetComponent<PlayerHealth>().getDamage(damage);
