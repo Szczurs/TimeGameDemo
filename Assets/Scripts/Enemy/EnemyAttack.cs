@@ -153,7 +153,7 @@ public class EnemyAttack : MonoBehaviour
     {
         cooling = false;
         attackMode = false;
-        animator.SetBool("Attacking",false);
+        //animator.SetBool("Attacking",false);
 
     }
 
