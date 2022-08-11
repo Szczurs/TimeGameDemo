@@ -57,6 +57,7 @@ public class PlayerController2D : MonoBehaviour
             //Debug.Log("spa");
             if (dashCoolCounter >= 0 && dashCooldown >= 0)
             {
+                animator.SetTrigger("Dash");
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
                 //Debug.Log("spa1");
