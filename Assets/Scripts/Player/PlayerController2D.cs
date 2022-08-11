@@ -51,30 +51,27 @@ public class PlayerController2D : MonoBehaviour
         
      
         animator.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude));
-    
-      
-
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("spa");
+            //Debug.Log("spa");
             if (dashCoolCounter >= 0 && dashCooldown >= 0)
             {
                 activeMoveSpeed = dashSpeed;
                 dashCounter = dashLength;
-                Debug.Log("spa1");
+                //Debug.Log("spa1");
 
             }
         }
 
         if (dashCounter > 0)
         {
-            Debug.Log("1");
+            //Debug.Log("1");
             dashCounter -= Time.deltaTime;
 
             if (dashCounter <= 0)
             {
-                Debug.Log("2");
+                //Debug.Log("2");
                 activeMoveSpeed = moveSpeed;
                 dashCoolCounter = dashCooldown;
             }
@@ -82,7 +79,7 @@ public class PlayerController2D : MonoBehaviour
 
         if (dashCoolCounter < 0)
         {
-            Debug.Log("3");
+            //Debug.Log("3");
             dashCoolCounter -= Time.deltaTime;
         }
     }

@@ -113,7 +113,6 @@ GameObject:
   - component: {fileID: 8177043670035986520}
   - component: {fileID: 8177043670035986519}
   - component: {fileID: 8177043670035986518}
-  - component: {fileID: 8431632710935963102}
   m_Layer: 7
   m_Name: 'Enemy '
   m_TagString: Enemy
@@ -233,7 +232,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 1.5
   pickNextWaypointDist: 1
-  endReachedDistance: 0.8
+  endReachedDistance: 0.5
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -302,18 +301,6 @@ MonoBehaviour:
   health: 0
   timeValue: 100
   spawner: {fileID: 0}
---- !u!114 &8431632710935963102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8177043670035986526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ffb3565b93327419994d17ebedecd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8177043670429650051
 GameObject:
   m_ObjectHideFlags: 0

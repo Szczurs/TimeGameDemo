@@ -825,9 +825,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1299823749}
-  dashSpeed: 0
-  dashLength: 5
-  dashCooldown: 1
+  movement: {x: 0, y: 0}
+  dashSpeed: 20
+  dashLength: 0.2
+  dashCooldown: 5
   dashCounter: 0
   playerHealth: {fileID: 1299823753}
   animator: {fileID: 1109608783}
